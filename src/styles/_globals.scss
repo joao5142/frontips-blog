@@ -1,0 +1,26 @@
+.gradient-blur {
+	background: linear-gradient(180deg, rgba(255, 122, 0, 0) 0%, #ff5858 100%);
+	filter: blur(100px);
+
+	width: 366px;
+	height: 365px;
+
+	position: relative;
+	z-index: -1;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 30% !important;
+		left: 30% !important;
+
+		width: 337px;
+		height: 390px;
+		left: 383px;
+		top: 204px;
+
+		background: linear-gradient(180deg, rgba(0, 15, 48, 0.4) 0%, #00309966 100%);
+		filter: blur(75px);
+	}
+}

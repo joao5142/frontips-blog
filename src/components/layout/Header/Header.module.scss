@@ -1,0 +1,23 @@
+.header {
+	position: relative;
+	height: 100vh;
+
+	&__title {
+		max-width: 600px;
+		margin: 200px 0px 100px;
+		word-wrap: break-word;
+		word-break: break-word;
+	}
+
+	&__gradient {
+		position: absolute;
+		left: -150px;
+		top: 25%;
+	}
+
+	&__socials {
+		> * {
+			cursor: pointer;
+		}
+	}
+}
