@@ -1,5 +1,6 @@
 import ChevronRight from "@/components/icons/ChevronRight/index";
 import Button from "@/components/ui/Button/index";
+import { useState } from "react";
 
 type PropsType = {
 	children?: React.ReactNode;
@@ -9,16 +10,18 @@ type PropsType = {
 };
 
 export default function PostCard(props: PropsType) {
+	const [isButtonActive, setIsButtonActive] = useState<boolean>();
 	return (
 		<>
 			<h4 className="mb-3">How to deal with subjective feedback from client</h4>
 			<p>
-				Наша команда состоит из высококлассных специалистов с международным опытом работы в сфере Web-разработки,
-				мобильной разработки, Product менеджмента и дизайна. Мы предоставляем премиум сервис по доступным ценам и всегда
-				нацелены на успех наших клиентов.{" "}
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod possimus voluptatibus nesciunt ea dolor
+				accusantium consectetur sint repudiandae deleniti, dolores repellendus itaque facilis sapiente ipsam labore
+				saepe quae reprehenderit! Esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod possimus
+				voluptatibus nesciunt ea dolor accusantium consectetur sint!
 			</p>
-			<Button className="mt-4">
-				<span className="me-2">Read more</span> <ChevronRight />{" "}
+			<Button mouseMove={(e: boolean) => setIsButtonActive(e)} className="mt-4">
+				<span className="me-2">Read more</span> <ChevronRight color={isButtonActive ? "#fff" : ""} />{" "}
 			</Button>
 		</>
 	);

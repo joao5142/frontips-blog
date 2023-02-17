@@ -1,0 +1,22 @@
+.input {
+	display: block;
+	padding: 10px;
+	background: transparent;
+	max-width: 300px;
+	min-width: 350px;
+
+	color: #fff;
+	outline: 0;
+
+	border: 0px;
+	border-bottom: 1px solid #ffffff;
+
+	font-weight: 400;
+}
+
+.input::placeholder {
+	color: #878787;
+}
+.input:focus::placeholder {
+	color: #fff;
+}

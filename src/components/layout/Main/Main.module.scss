@@ -3,4 +3,18 @@
 	overflow: hidden;
 	mask-image: linear-gradient(to bottom, black 50%, transparent 85%);
 	-webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 85%);
+
+	z-index: 1;
+}
+.posts__gradient {
+	right: -150px;
+	top: 20%;
+}
+
+.contact {
+	position: relative;
+}
+.contact__gradient {
+	left: -150px;
+	top: -20%;
 }

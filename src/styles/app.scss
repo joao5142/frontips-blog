@@ -9,4 +9,6 @@ body {
 	font-size: 1.1rem;
 
 	@include setScrollColor();
+
+	overflow-x: hidden;
 }

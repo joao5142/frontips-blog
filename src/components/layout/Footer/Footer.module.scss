@@ -1,0 +1,15 @@
+.footer {
+	padding: 50px 0px 20px;
+	background-color: #000;
+
+	&__socials {
+		> * {
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+		}
+	}
+	&__copy {
+		color: #909090;
+	}
+}

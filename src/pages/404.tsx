@@ -8,11 +8,13 @@ export default function Custom404() {
 	return (
 		<>
 			<Wrapper>
-				<Navbar />
-				<div className="d-flex justify-content-center mt-5">
-					<div className={classNames("gradient-blur", styles.gradient)} />
-					<img width={400} src="/assets/ilustrations/404.svg" alt="Error" />
-				</div>
+				<header className="mt-5">
+					<Navbar />
+					<div className="d-flex justify-content-center mt-5">
+						<div className={classNames("gradient-blur", styles.gradient)} />
+						<img className={styles["error-image"]} width={400} src="/assets/ilustrations/404.svg" alt="Error" />
+					</div>
+				</header>
 			</Wrapper>
 		</>
 	);

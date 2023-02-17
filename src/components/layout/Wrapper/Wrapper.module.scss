@@ -1,4 +1,9 @@
 .container {
-	max-width: 80vw;
-	margin: 0 auto;
+	margin: 0px 10%;
+}
+.container--no-left {
+	margin-left: 0px;
+}
+.container--no-right {
+	margin-right: 0px;
 }

@@ -12,4 +12,13 @@
 	color: $main-color;
 
 	font-weight: 500;
+
+	transition: all 0.2s linear;
+	&:hover {
+		background-color: $main-color;
+		color: #fff;
+	}
+	&:active {
+		transform: scale(0.98);
+	}
 }

@@ -5,7 +5,7 @@
 	width: 366px;
 	height: 365px;
 
-	position: relative;
+	position: absolute;
 	z-index: -1;
 
 	&::before {
@@ -23,4 +23,8 @@
 		background: linear-gradient(180deg, rgba(0, 15, 48, 0.4) 0%, #00309966 100%);
 		filter: blur(75px);
 	}
+}
+
+.contrast-color {
+	color: $main-color;
 }
