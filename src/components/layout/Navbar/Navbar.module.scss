@@ -1,33 +1,60 @@
 .navbar {
-	display: flex;
-	justify-content: end;
+  display: flex;
+  justify-content: end;
 
-	li {
-		position: relative;
+  li {
+    position: relative;
 
-		cursor: pointer;
-	}
+    cursor: pointer;
+  }
 
-	li:hover::before {
-		content: "";
+  li:hover::before {
+    content: "";
 
-		position: absolute;
-		left: 0px;
-		bottom: -7px;
+    position: absolute;
+    left: 0px;
+    bottom: -7px;
 
-		background-color: $main-color;
+    background-color: $main-color;
 
-		height: 2px;
+    height: 2px;
 
-		animation: grow 0.4s ease-in-out forwards;
-	}
+    animation: grow 0.4s ease-in-out forwards;
+  }
 }
 
+.menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.9);
+
+  ul {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+
+    font-size: 1.5rem;
+  }
+}
 @keyframes grow {
-	0% {
-		width: 0%;
-	}
-	100% {
-		width: 100%;
-	}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }

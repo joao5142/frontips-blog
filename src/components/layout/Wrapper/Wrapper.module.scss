@@ -1,9 +1,13 @@
 .container {
-	margin: 0px 10%;
+  margin: 0px 10%;
+
+  @media (max-width: 450px) {
+    margin: 0px 10px;
+  }
 }
 .container--no-left {
-	margin-left: 0px;
+  margin-left: 0px;
 }
 .container--no-right {
-	margin-right: 0px;
+  margin-right: 0px;
 }

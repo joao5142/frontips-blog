@@ -1,43 +1,45 @@
 .header {
-	position: relative;
-	height: 100vh;
+  position: relative;
+  height: 100vh;
 
-	&__title {
-		max-width: 600px;
+  &__title {
+    max-width: 600px;
 
-		word-wrap: break-word;
-		word-break: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 
-		font-weight: 300;
-		font-size: 3.1rem;
+    font-weight: 300;
+    font-size: 3.1rem;
+  }
+  &__container-title {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 50px);
+    transform: translateY(-50%);
+  }
+  &__title--dot {
+    color: $main-color;
+  }
+  &__title--bold {
+    font-weight: 500;
+    font-size: 4.2rem;
+  }
 
-		position: absolute;
-		left: 0;
-		top: calc(50% - 50px);
-		transform: translateY(-50%);
-	}
-	&__title--dot {
-		color: $main-color;
-	}
-	&__title--bold {
-		font-weight: 500;
-		font-size: 4.2rem;
-	}
+  &__gradient {
+    position: absolute;
+    left: -150px;
+    top: 25%;
+  }
+  &__gradient--2 {
+    position: absolute;
+    right: -350px;
+    top: 60%;
+  }
 
-	&__gradient {
-		position: absolute;
-		left: -150px;
-		top: 25%;
-	}
-	&__gradient--2 {
-		position: absolute;
-		right: -350px;
-		top: 60%;
-	}
-
-	&__socials {
-		> * {
-			cursor: pointer;
-		}
-	}
+  &__socials {
+    margin-top: 100px;
+    > * {
+      cursor: pointer;
+    }
+  }
 }

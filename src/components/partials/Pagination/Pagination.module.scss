@@ -1,0 +1,23 @@
+.button {
+  border: 1px solid $main-color;
+  border-radius: 5px;
+
+  padding: 8px 12px;
+  background-color: transparent;
+
+  font-weight: bold;
+  color: white;
+
+  cursor: pointer;
+
+  &:hover {
+    background: $main-color;
+    transition: all 0.4s ease-in;
+  }
+}
+.button--active {
+  background: $main-color;
+}
+.button--navigation i {
+  color: $main-color;
+}
