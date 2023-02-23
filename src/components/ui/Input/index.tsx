@@ -21,7 +21,6 @@ export default function Input({ name, placeholder, type, onInput }: PropsTypes) 
         type={type}
         onInput={(e) => {
           if (e) {
-            //set the 'target' type as HTMLButtonElement, which has 'value'
             const target = e.target as HTMLButtonElement;
 
             setInputValue(target.value);

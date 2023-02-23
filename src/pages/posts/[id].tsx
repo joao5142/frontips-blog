@@ -12,8 +12,6 @@ export default function Post() {
       <Head>
         <title>Frontips Postagens</title>
         <meta name="description" content="Frontips,postagens sobre tecnologias front-end." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Wrapper>
