@@ -1,5 +1,5 @@
 <h1>Projeto Frontips</h1>
-<h4>🚀 Frontips , um blog com dicas de front-end , desenvolvido com NextJs.</h4>
+<h4>🚀 Frontips, um blog com dicas de front-end, desenvolvido com NextJs.</h4>
 
 <h2>🚧 Status do projeto</h2>
 <p>Concluído</p>
