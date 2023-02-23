@@ -8,7 +8,8 @@
     cursor: pointer;
   }
 
-  li:hover::before {
+  li:hover::before,
+  li.--active::before {
     content: "";
 
     position: absolute;

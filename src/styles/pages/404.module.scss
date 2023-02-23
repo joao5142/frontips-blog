@@ -1,9 +1,15 @@
-.gradient {
-	position: absolute;
-	top: 20%;
-	left: -150px;
+.gradient,
+.gradient--2 {
+  position: absolute;
 }
-
+.gradient {
+  top: 10%;
+  left: -100px;
+}
+.gradient--2 {
+  bottom: 20%;
+  right: -100px;
+}
 .error-image {
-	margin-top: 150px;
+  margin-top: 150px;
 }

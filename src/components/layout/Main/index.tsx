@@ -8,11 +8,10 @@ import Author from "../../partials/Author/index";
 
 import PostCard from "@/components/partials/PostCard";
 import Button from "@/components/ui/Button";
-import Contact from "@/components/form/Contact";
 
 import Link from "next/link";
 
-import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
+import { useKeenSlider } from "keen-slider/react";
 import ContactSection from "../../partials/ContactSection/index";
 
 export default function Main() {
