@@ -10,3 +10,10 @@
   right: -150px;
   top: 20%;
 }
+.img {
+  max-height: 400px;
+
+  @media (max-width: 600px) {
+    max-height: 200px;
+  }
+}

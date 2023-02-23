@@ -42,4 +42,13 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: 450px) {
+    &__title {
+      font-size: 2rem;
+    }
+    &__title--bold {
+      font-size: 2.7rem;
+    }
+  }
 }

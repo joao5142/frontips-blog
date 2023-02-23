@@ -1,22 +1,29 @@
 .input {
-	display: block;
-	padding: 10px;
-	background: transparent;
-	max-width: 300px;
-	min-width: 350px;
+  display: block;
+  padding: 10px;
+  background: transparent;
+  max-width: 300px;
+  min-width: 350px;
 
-	color: #fff;
-	outline: 0;
+  color: #fff;
+  outline: 0;
 
-	border: 0px;
-	border-bottom: 1px solid #ffffff;
+  border: 0px;
+  border-bottom: 1px solid #ffffff;
 
-	font-weight: 400;
+  font-weight: 400;
+
+  @media (max-width: 450px) {
+    & {
+      max-width: 100%;
+      min-width: 200px;
+    }
+  }
 }
 
 .input::placeholder {
-	color: #878787;
+  color: #878787;
 }
 .input:focus::placeholder {
-	color: #fff;
+  color: #fff;
 }

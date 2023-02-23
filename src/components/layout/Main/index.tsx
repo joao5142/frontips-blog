@@ -16,6 +16,17 @@ import ContactSection from "../../partials/ContactSection/index";
 
 export default function Main() {
   const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(max-width: 1200px)": {
+        slides: { perView: 3, spacing: 5 },
+      },
+      "(max-width: 900px)": {
+        slides: { perView: 2, spacing: 5 },
+      },
+      "(max-width: 600px)": {
+        slides: { perView: 1, spacing: 5 },
+      },
+    },
     slides: { perView: 4, spacing: 5 },
   });
 
@@ -25,17 +36,17 @@ export default function Main() {
         <Section>
           <h2 className="mb-5">Mais Recente</h2>
 
-          <div className="row">
-            <div className="col-lg-6">
+          <div className="row  ">
+            <div className="col-12 col-lg-6 mb-4 mb-lg-0">
               <img
-                height={400}
+                className={classNames(styles.img, "img-fluid")}
                 width="100%"
                 src="https://images.unsplash.com/photo-1559854036-2409f22a918a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                 alt=""
               />
             </div>
-            <div className="col-lg-6 d-flex align-items-center justify-content-center">
-              <div className="w-75">
+            <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+              <div className="w-md-75">
                 <PostCard postId={1} />
               </div>
             </div>
