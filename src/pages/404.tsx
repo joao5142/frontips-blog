@@ -8,7 +8,7 @@ export default function Custom404() {
   return (
     <>
       <Wrapper>
-        <header className="mt-5">
+        <header className="mt-3 mt-md-5">
           <Navbar />
           <div className="d-flex justify-content-center mt-5">
             <div className={classNames("gradient-blur", styles.gradient)} />

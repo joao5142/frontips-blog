@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Wrapper>
       <header className={classNames(styles.header, "container-width")}>
-        <div className="mt-5">
+        <div className="mt-3 mt-md-5">
           <Navbar />
         </div>
         <div className={classNames("gradient-blur", styles["header__gradient"])} />

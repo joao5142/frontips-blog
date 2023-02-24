@@ -15,7 +15,7 @@ export default function Post() {
       </Head>
 
       <Wrapper>
-        <div className="mt-5">
+        <div className="mt-3 mt-md-5">
           <Navbar />
         </div>
         <div className={styles.post}>
